@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet"
+    href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite App</title>
+  <Script src="../../jquery-3.6.0.min.js"></Script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-dark sticky-top py-4">
+    <div class="container">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <img src="../../Frontend/HTML/Genral-logo.png" alt="" height="42" width="45" class="rounded d-none d-md-block">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item  mx-5 ">
+            <a href="../../Frontend/HTML/Module 1 & 2/index.html"
+              class="nav-link text-white">HTML</a>
+          </li>
+
+          <li class="nav-item mx-5">
+            <a href="../../Frontend/CSS/index.html" class="nav-link  text-white">CSS</a>
+          </li>
+
+          <li class="nav-item mx-5">
+            <a href="../../Frontend/BOOTSTRAP/index.html" class="nav-link text-white">BOOTSTRAP</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a href="../../Frontend/Projects/index.html"
+              class="nav-link text-white">PROJECTS</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a href="../../Frontend/JavaScript/index.html"
+            class="nav-link text-white">JAVASCRIPT</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a href="index.html"
+            class="nav-link text-white">JQUERY</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+      <div class="row">
+        <div class="col-lg-2 col-sm-4 bg-dark " style="height: 100vh;">
+          <div class=" text-white collapse show" id="side" >
+            <h4 class="ms-4">JQUERY</h4>
+            <ul>
+              <ul>Module 1</ul>
+              <li>Practice</li>
+              <ul><a href="../../Module 1/Practice/practice1.html">Practical1</a></ul>
+              <ul><a href="../../Module 1/Practice/practice2.html">Practical2</a></ul>
+              <li>Assignment</li>
+              <ul><a href="../../Module 1/Assignment/assignment.html">Assignment</a></ul>
+              <ul>Module 2</ul>
+              <li>Assignment</li>
+              <ul><a href="../../Module 2/Assignment/assignment.html">Assignment</a></ul>
+              </ul>
+            </div>
+  </div>
+        <div class="col-lg-10 col-sm-8 text-center" >
+            <p>Lorem ipsum dolor sit amet<span id="helpText">Hello World!!</span> consectetur adipisicing elit. Unde, minima. Recusandae sapiente laborum praesentium nihil ea aut libero, porro dolore temporibus quod illum ipsum exercitationem?</p>
+    
+    <script>
+        $(document).ready(function(){
+            $("p").css("background-color", "blue").mouseenter(function(){
+                $("#helpText").hide();
+            }),
+            $("p").mouseleave(function(){
+                $("#helpText").show();
+            })
+        })
+      
+</script>
+        </div>
+        </div>
+</body>
+
+</html>

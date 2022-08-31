@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="date">Enter the Date :</label>
+    <input type="text" name="str" id="str" style="margin: 20px;" placeholder="MM-DD-YYYY"> <br>
+    <button onclick="check()" style=" padding: 12px;">Check It!</button>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+    dateformat = /^(?:(0[1-9]|1[012])[\-.](0[1-9]|[12][0-9]|3[01])[\-.][0-9]{4})$/;
+
+         function check(){
+             dt=document.getElementById("str").value;
+             if(!(dateformat.test(dt))){
+                 document.getElementById('demo').innerHTML="Date is Invalid"
+             }
+             else{
+                 var dtinfo  = dt.split("-");
+                 var mm = parseInt(dtinfo[0]);
+                 var dd = parseInt(dtinfo[1]);
+                 var yyyy = parseInt(dtinfo[2]);
+                 if((mm==1||mm==3||mm==5||mm==7||mm==8||mm==10||mm==12) && (dd>31)){
+                document.getElementById("demo").innerHTML="Date is invalid";
+            }else if((mm==4||mm==6||mm==9||mm==11) && (dd>30)){
+                document.getElementById("demo").innerHTML="Date is invalid";
+            }else if(mm==2 && (yyyy%4==0) && dd>29){
+                document.getElementById("demo").innerHTML="Date is invalid";
+            }else if(mm==2 && (yyyy%4!=0) && dd>28){
+                document.getElementById("demo").innerHTML="Date is invalid";
+            }else{
+                document.getElementById("demo").innerHTML="Valid Date";
+                document.getElementById("demo2").innerHTML = "The Date is :" + dt;
+            }
+             }
+         }
+    </script>
+</body>
+</html>

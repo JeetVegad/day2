@@ -1,0 +1,14 @@
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.exe
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.deps.json
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.json
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.dev.json
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfo.cs
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Practice\Practice1\Source\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache

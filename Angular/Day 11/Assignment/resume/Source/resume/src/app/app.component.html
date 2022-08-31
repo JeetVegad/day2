@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 vh-100 bg-primary">
+      <div class="text-center mt-5">
+        <img src="https://cdn-icons-png.flaticon.com/512/306/306473.png" height="200" width="200" alt="" class="mb-4">
+      <h5> <a class=" text-decoration-none text-white" [routerLink]="['./about']">About </a></h5>
+      <h5> <a class=" text-decoration-none text-white" [routerLink]="['./experience']">Experience</a></h5>
+      <h5> <a class=" text-decoration-none text-white" [routerLink]="['./projects']">Projects</a></h5>
+      <h5> <a class=" text-decoration-none text-white" [routerLink]="['./education']">Education</a></h5>
+      <h5> <a class=" text-decoration-none text-white" [routerLink]="['./skills']">Skils</a></h5>
+      <h5> <a class=" text-decoration-none text-white" [routerLink]="['./interest']">Interest</a></h5>
+    </div>
+    </div>
+    <div class="col-lg-10">
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
+</div>

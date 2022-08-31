@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+</head>
+
+<body>
+    <p id="demo2">hey everyone</p>
+    <p id="demo1"></p>
+    <img id="image" src="../../../Tailwind/FoodNinja/img/img1.jpg" alt=""><br>
+    <input type="text" id="mytext" value="Hello">
+    <p id="demo3">Changing the Color of the element</p>
+    <p id="demo4">I'm Invisible</p>
+    <script>
+        document.getElementsByTagName("p")[0].innerHTML = "Tag name";
+        document.getElementById("demo1").innerHTML = "Hello";
+        document.getElementById("image").src = "../../../Tailwind/FoodNinja/img/img2.jpg";
+        document.getElementById("mytext").value = "Changing value in input field!";
+        document.getElementById("demo3").style.color = "red";
+        document.getElementById("demo4").style.display = "none";
+    </script>
+</body>
+
+</html>

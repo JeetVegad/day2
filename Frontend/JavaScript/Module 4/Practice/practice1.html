@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice1</title>
+</head>
+<body>
+    <h2>Callbacks</h2>
+    <label for="input">Enter Number You want to Square :</label>
+    <input type="number" name="num1" id="num1">
+    <button onclick="square(num1.value,myDisplayer)">Do it!</button>
+    <p id="demo"></p>
+    
+    <script>
+    function myDisplayer(result) {
+      document.getElementById("demo").innerHTML = result;
+    }
+    
+    function square(num1, Callback) {
+      // var num1 = document.getElementById("num1").value
+      let sq = num1*num1
+      Callback(sq);
+    }
+    
+    // square(num1,myDisplayer);
+    </script>
+</body>
+</html>

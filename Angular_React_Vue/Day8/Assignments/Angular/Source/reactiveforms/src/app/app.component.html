@@ -1,0 +1,101 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+      <app-formcomponent (notify)="listevent($event)"></app-formcomponent>
+
+    </div>
+    <div class="col-lg-4">
+
+      <table class="table mt-5">
+        <caption></caption>
+        <tbody *ngFor="let item of list">
+          <tr>
+            <td colspan="2"><h1>Student Details</h1></td>
+          </tr>
+          <tr>
+            <th scope="col">Name</th>
+            <td>{{item.Name.firstName}} {{item.Name.middleName}} {{item.Name.lastName}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Date of birth</th>
+            <td>{{item.DOB}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Place of birth</th>
+            <td>{{item.POB}}</td>
+          </tr>
+          <tr>
+            <th scope="col">First language</th>
+            <td>{{item.FL}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Address</th>
+            <td>{{item.Address.city}} ,{{item.Address.state}}, {{item.Address.country}},{{item.Address.pin}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Email</th>
+            <td>{{item.email}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Education Details</th>
+            <td>{{item.eduDetail}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Profession</th>
+            <td>{{item.profession}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Designation</th>
+            <td>{{item.designation}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Phone</th>
+            <td>{{item.phone}}</td>
+          </tr>
+          <tr>
+            <td colspan="2"><h1>Mother Details</h1></td>
+          </tr>
+          <tr>
+            <th scope="col">Mother Name</th>
+            <td>{{item.mName.mfirstName}} {{item.mName.mmiddleName}} {{item.mName.mlastName}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Email</th>
+            <td>{{item.memail}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Education Details</th>
+            <td>{{item.meduDetail}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Profession</th>
+            <td>{{item.mprofession}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Designation</th>
+            <td>{{item.mdesignation}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Phone</th>
+            <td>{{item.mphone}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Emergency Contact List</th>
+            <td>{{item.emergency}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Relation</th>
+            <td>{{item.relation}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Reference Details</th>
+            <td>{{item.refDetail}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Referebce Through</th>
+            <td>{{item.refThrough}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

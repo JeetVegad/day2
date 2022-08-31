@@ -1,0 +1,22 @@
+Task 1:Practicing Stash
+
+	Repository:https://github.com/JeetVegad/practice3.git
+	7 Commits
+	1.Initial commit
+	2.Creating index.html
+	3.Adding some text in index.html in remote
+	4.adding some text in local system and stash it.
+	5.pull from the remote and after pulling apply stash
+	6.Apply the incoming change
+	7.drop stash file
+
+Task 2.Practicing Stage
+
+	Repository:https://github.com/JeetVegad/stage.git
+	5 commits
+	1.Initial commit:creating repository
+	2.Adding file "index.html"
+	3.Staging about.html file which created in local System
+	4.staging h3 in about.html
+	5.adding h4 in index.html,staging that file
+Task 3.Practicing Solving conflicts

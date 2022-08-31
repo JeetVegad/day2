@@ -1,0 +1,9 @@
+<div class="container">
+<label class="form-label">UserName</label>
+<input type="text" class="form-control" #u1 />
+<label class="form-label">Password</label>
+<input type="text" class="form-control" #p1 />
+<button class="btn btn-primary rounded text-white mt-3" (click)="check(u1.value,p1.value)">Login</button>
+<br>
+<span class="text-danger ">{{ msg }}</span>
+</div>

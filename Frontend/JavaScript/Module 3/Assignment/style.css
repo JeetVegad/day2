@@ -1,0 +1,29 @@
+*{
+    margin: 6px;
+}
+
+#empid{
+    margin-left: 31px;
+}
+#age{
+    margin-left: 85px;
+}
+#des{
+    margin-left: 29px;
+}
+#sal{
+    margin-left: 65px;
+}
+#loc{
+    margin-left: 48px;
+}
+#email{
+    margin-left: 45px;
+}
+
+button{
+    padding: 4px 6px;
+}
+#ml{
+    margin-left: 65px;
+}

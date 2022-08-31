@@ -1,0 +1,9 @@
+1)creating repository
+2)commiting and push it
+3)create A.txt and B.txt and only commit A.txt using git commit A.txt
+4)comiting B.txt and push it
+5) adding bot A.txt and B.txt in staging and only commit A.txt 
+6) crete File.txt and commit and push it
+7) now commiting File.txt and after rename with git mv File.txt file.txt and comiting and push it
+8) adding word and modify last commit message using git commit --amend comand 
+9) update date of last comit using git commit date="dd-mm-yyyy hh:mm:ss"

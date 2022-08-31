@@ -1,0 +1,16 @@
+._12_oN {
+    opacity: 0;
+    transition: opacity .3s ease-out;
+}
+._2tuBw {
+    opacity: 1!important;
+}
+.jdo4W {
+    z-index: -1;
+}
+
+#login,#logout{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #fc8019;
+}

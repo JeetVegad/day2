@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table mt-5 bottom-2 text-center table-hover">
+        <caption></caption>
+        <thead>
+            <tr>
+                <caption></caption>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Quantity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="data" class="border-2">
+
+        </tbody>
+    </table>
+
+    <div class="p-2 border d-flex flex-row">
+        <button class="mt-2 btn-outline-secondary" onclick="cartSummry()">Cart Summary</button>
+        <button class="mt-2 btn-outline-secondary ms-auto" onclick="emptyCart()">EmptyCart</button>
+    </div>
+    <div class="p-5 " id="summaryData">
+       
+    </div>
+</div>
+<script type="text/javascript">
+                var data={"product":[
+            {
+                "id":1,
+                "name":"Chees",
+                "price":100,
+                "quantity":1
+            },
+            {
+                "id":2,
+                "name":"Pen",
+                "price":150,
+                "quantity":2
+            },
+            {
+                "id":3,
+                "name":"Butter",
+                "price":100,
+                "quantity":1
+            },
+            {
+                "id":4,
+                "name":"Pencil",
+                "price":10,
+                "quantity":1
+            },
+            ]
+        }
+
+        var TBody=document.getElementById("data");        
+        var rowcount=0;
+        var row="";
+        var cartData=[];
+
+        for(i in data.product){
+            rowcount=TBody.rows.length;
+            row=TBody.insertRow(rowcount);
+            row.insertCell(0).innerHTML=data.product[i].id;
+            row.insertCell(1).innerHTML=data.product[i].name;
+            row.insertCell(2).innerHTML=data.product[i].price;
+            row.insertCell(3).innerHTML=data.product[i].quantity;
+            row.insertCell(4).innerHTML="<input type='button' value='Add cart' onClick='javascript:addcart(this)'>";
+            // console.log(rowcount);
+            // console.log(product[i].id);
+            // console.log(product[i].name);           
+            // console.log(product[i].price); 
+            // console.log(product[i].qunatity);  
+        }
+        function addcart(row){
+            var index=row.parentNode.parentNode.rowIndex;
+            // alert(index)
+            var id=data.product[index-2].id;
+            // alert(id);
+            var name=data.product[index-2].name;
+            var price=data.product[index-2].price;
+            var quantity=data.product[index-2].quantity;
+            // alert(name);
+            // alert(price);
+            // alert(quantity);
+
+            let cart={"id":id,"name":name,"price":price,"quantity":quantity};
+            // alert(cart);
+            cartData.push(cart);
+            // alert(JSON.stringify(cartData));
+            localStorage.setItem("cart",JSON.stringify(cartData));
+            alert("Item Added to Cart Succesfully......");
+            // localStorage.clear();
+           
+        }
+        function cartSummry(){
+            let getdata=localStorage.getItem("cart");
+            let finalData=JSON.parse(getdata)
+            console.log(finalData);
+        }
+</script>
+</body>
+</html>

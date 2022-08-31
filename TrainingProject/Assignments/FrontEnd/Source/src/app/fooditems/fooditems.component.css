@@ -1,0 +1,39 @@
+#fi,#cardfi{
+    background-color: #332421;
+}
+#location,#type{
+    font-size: smaller;
+}
+#time,#rating,#price{
+    font-size: small;
+}
+#cardfi{
+    font-size: small;
+}
+#vage{
+    font-size: small;
+}
+#btn{
+    font-size: small;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    margin-top: 45px;
+    padding-left:35px;
+    padding-right:35px;
+}
+#fl{
+    position: relative;
+}
+#cartfood{
+    font-size: 14px;
+}
+#cartbtn{
+    font-size: small;
+
+    padding-left:28px;
+    padding-right:28px;
+}

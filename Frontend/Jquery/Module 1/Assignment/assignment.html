@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet"
+    href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite App</title>
+  <script src="../../jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-dark sticky-top py-4">
+    <div class="container">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <img src="../../Frontend/HTML/Genral-logo.png" alt="" height="42" width="45" class="rounded d-none d-md-block">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item  mx-5 ">
+            <a href="../../Frontend/HTML/Module 1 & 2/index.html"
+              class="nav-link text-white">HTML</a>
+          </li>
+
+          <li class="nav-item mx-5">
+            <a href="../../Frontend/CSS/index.html" class="nav-link  text-white">CSS</a>
+          </li>
+
+          <li class="nav-item mx-5">
+            <a href="../../Frontend/BOOTSTRAP/index.html" class="nav-link text-white">BOOTSTRAP</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a href="../../Frontend/Projects/index.html"
+              class="nav-link text-white">PROJECTS</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a href="../../Frontend/JavaScript/index.html"
+            class="nav-link text-white">JAVASCRIPT</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a href="index.html"
+            class="nav-link text-white">JQUERY</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+      <div class="row">
+        <div class="col-lg-2 col-sm-4 bg-dark " style="height: 100vh;">
+          <div class=" text-white collapse show" id="side" >
+            <h4 class="ms-4">JQUERY</h4>
+            <ul>
+              <ul>Module 1</ul>
+              <li>Practice</li>
+              <ul><a href="../../Module 1/Practice/practice1.html">Practical1</a></ul>
+              <ul><a href="../../Module 1/Practice/practice2.html">Practical2</a></ul>
+              <li>Assignment</li>
+              <ul><a href="../../Module 1/Assignment/assignment.html">Assignment</a></ul>
+              <ul>Module 2</ul>
+              <li>Assignment</li>
+              <ul><a href="../../Module 2/Assignment/assignment.html">Assignment</a></ul>
+              </ul>
+            </div>
+  </div>
+        <div class="col-lg-10 col-sm-8 text-center" >
+            <div class="container p-5 text-center d-flex flex-column
+            align-items-center">
+            <h3>Country Name Using JQuery</h3>
+
+            <select id="menu" class="form-select mt-5 w-50">
+                <option value="" selected>Select Country</option>
+            </select>
+
+            <label for="result" class="mt-5">Your Selected Country is : <ul
+                    class="list-unstyled" id="result"></ul></label>
+                
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function (){
+                var country=["India","America","China","Japan","Russia"]
+                $.each(country,function(index,data){
+                    $("#menu").append($("<option value='"+data+"'></option>").html(data))
+                })
+    
+                $.each(country,function(index,data){
+                    // alert(data)
+                    $("#result").append($("<li>"+data+"<li>"));
+                })
+    
+                    // alert($("#menu option:selected").val())
+                $("#menu").change(function (){
+                    
+                    countryVal=$("#menu option:selected").val();
+    
+                    if(countryVal==""){
+                        $("#result").html("")
+                        $.each(country,function(index,data){
+                        $("#result").append($("<li>"+data+"<li>"));
+                        })
+                    }
+                    else{
+                        $("#result").html("")
+                        $("#result").append($("<li>"+countryVal+"<li>"));
+                    }
+                });
+                
+            });
+        </script>
+        </div>
+        </div>
+</body>
+
+</html>

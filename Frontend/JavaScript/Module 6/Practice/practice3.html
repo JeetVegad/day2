@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>raed JSON</title>
+</head>
+<body>
+    <div class="container p-5 text-center">
+
+        <h2>Practice2 Keep above JSON Data into a file, using Web Fetch API read that data.</h2>
+        <table class="table bottom-2 mt-5">
+            <caption></caption>
+            <thead>
+                <tr>
+            
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody id="data" class="border-2">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+         var TBody=document.getElementById("data");
+        
+        var rowcount=0;
+        var row="";
+
+        (async function readFile(){
+            let file=await fetch("practice1.json");
+            let data= await file.json();
+            console.log(data);
+
+            for(i in data.products){
+            rowcount=TBody.rows.length;
+            row=TBody.insertRow(rowcount);
+            row.insertCell(0).innerHTML=data.products[i].Name;
+            row.insertCell(1).innerHTML=data.products[i].Price;
+            row.insertCell(2).innerHTML=data.products[i].Location;
+        }
+            
+        })();
+        
+    </script>
+</body>
+</html>

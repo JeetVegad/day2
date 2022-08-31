@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice5</title>
+</head>
+
+<body>
+    <label for="add">Enter element to be push :</label>
+    <input type="text" name="element" id="element" style="margin-bottom: 6px;"> <br>
+    <button onclick="push()" style=" padding: 12px;">Push It!</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        function push() {
+            var ele = document.getElementById('element').value;
+            const arr = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo1").innerHTML = "length of array is :" + " " + arr.push(ele);
+            document.getElementById("demo2").innerHTML = "Array After Pushed element :" + arr;
+            document.getElementById("demo3").innerHTML = "Poped Element :" + arr.pop();
+            document.getElementById("demo4").innerHTML = "Array After poped element :" + arr;
+            document.getElementById("demo5").innerHTML = "Shift Element :" + arr.shift();
+            document.getElementById("demo6").innerHTML = "Array after Shift :" + arr;
+        }
+    </script>
+</body>
+
+</html>

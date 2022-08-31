@@ -1,0 +1,21 @@
+.flex-container {
+    display: flex;
+    background-color: blue;
+}
+.flex-container > div{
+    background-color: brown;
+                padding: 20px;
+                margin: 10px;
+                font-size: 20px;
+}
+.flex-direction{
+    display: flex;
+    background-color: black;
+    flex-direction: row-reverse;
+}
+.flex-direction > div{
+        background-color: brown;
+        padding: 20px;
+        margin: 10px;
+        font-size: 20px;
+}

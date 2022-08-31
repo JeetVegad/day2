@@ -1,0 +1,189 @@
+<div class="container bg-dark d-flex flex-column align-items-center">
+    <h1 class="text-white">Student Admission Detail:</h1>
+    <form [formGroup]="stdForm" (ngSubmit)="submitdata() " class="w-50">
+
+        <div formGroupName="Name">
+            <label class="mb-2 text-white align-item-center">Firstname : </label>
+            <input class="form-control" type="text" formControlName="firstName" />
+
+            <label class="mb-2 text-white align-item-center">Middlename : </label>
+            <input class="form-control" type="text" formControlName="middleName" />
+
+            <label class="mb-2 text-white align-item-center">Lastname : </label>
+            <input class="form-control" type="text" formControlName="lastName" />
+        </div>
+
+        <label class="mb-2 text-white align-item-center">Date of Birth : </label>
+        <input class="form-control" type="date" formControlName="DOB" />
+        <div *ngIf="dob.invalid && (dob.dirty || dob.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="dob.errors?.['required']">
+                Date of birth is required
+            </div>
+        </div>
+
+        <label class="mb-2 text-white align-item-center">Place of Birth : </label>
+        <input class="form-control" type="date" formControlName="POB" />
+        <div *ngIf="pob.invalid && (pob.dirty || pob.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="pob.errors?.['required']">
+                Place of birth is required
+            </div>
+        </div>
+
+
+        <label class="mb-2 text-white align-item-center">First Language : </label>
+        <input class="form-control" type="text" formControlName="FL" />
+        <div *ngIf="fl.invalid && (fl.dirty || fl.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="fl.errors?.['required']">
+                First language is required
+            </div>
+        </div>
+
+        <div formGroupName="Address">
+            <label class="mb-2 text-white align-item-center">City : </label>
+            <input class="form-control" type="text" formControlName="city" />
+
+            <label class="mb-2 text-white align-item-center">State : </label>
+            <input class="form-control" type="text" formControlName="state" />
+
+            <label class="mb-2 text-white align-item-center">Country : </label>
+            <input class="form-control" type="text" formControlName="country" />
+
+            <label class="mb-2 text-white align-item-center">pincode : </label>
+            <input class="form-control" type="text" formControlName="pin" />
+        </div>
+
+        <label class="mb-2 text-white align-item-center">Email : </label>
+        <input class="form-control" type="email" formControlName="email" />
+        <div *ngIf="em.invalid && (em.dirty || em.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="em.errors?.['required']">
+                Emai is required
+            </div>
+            <div *ngIf="em.errors?.['email']">
+                Enter valid email e.g xyz@gmail.com
+            </div>
+        </div>
+
+
+        <label class="mb-2 text-white align-item-center">Education Qualification : </label>
+        <input class="form-control" type="text" formControlName="eduDetail" />
+        <div *ngIf="ed.invalid && (ed.dirty || ed.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="ed.errors?.['required']">
+                Education qualification is required
+            </div>
+        </div>
+
+        <label class="mb-2 text-white align-item-center">Profession : </label>
+        <input class="form-control" type="text" formControlName="profession" />
+        <div *ngIf="pro.invalid && (pro.dirty || pro.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="pro.errors?.['required']">
+                Profession is required
+            </div>
+        </div>
+
+        <label class="mb-2 text-white align-item-center">Designation : </label>
+        <input class="form-control" type="text" formControlName="designation" />
+        <div *ngIf="des.invalid && (des.dirty || des.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="des.errors?.['required']">
+                Designation is required
+            </div>
+        </div>
+
+        <label class="mb-2 text-white align-item-center">Phone : </label>
+        <input class="form-control" type="" formControlName="phone" />
+        <div *ngIf="ph.invalid && (ph.dirty || ph.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="ph.errors?.['required']">
+                Phone is required.
+            </div>
+            <div *ngIf="ph.errors?.['minlength']">
+                Number must be of 10 Digits.
+            </div>
+        </div>
+
+        <div formGroupName="mName">
+            <h3 class="text-white">Mother Details :</h3>
+            <label class="mb-2 text-white align-item-center">Firstname : </label>
+            <input class="form-control" type="text" formControlName="mfirstName" />
+
+            <label class="mb-2 text-white align-item-center">Middlename : </label>
+            <input class="form-control" type="text" formControlName="mmiddleName" />
+
+            <label class="mb-2 text-white align-item-center">Lastname : </label>
+            <input class="form-control" type="text" formControlName="mlastName" />
+        </div>
+
+        <label class="mb-2 text-white align-item-center">Email : </label>
+        <input class="form-control" type="email" formControlName="memail" />
+        <div *ngIf="mem.invalid && (mem.dirty || mem.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="mem.errors?.['required']">
+                Email is required
+            </div>
+            <div *ngIf="mem.errors?.['email']">
+                Enter valid email e.g xyz@gmail.com
+            </div>
+        </div>
+
+
+        <label class="mb-2 text-white align-item-center">Education Qualification : </label>
+        <input class="form-control" type="text" formControlName="meduDetail" />
+        <div *ngIf="med.invalid && (med.dirty || med.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="med.errors?.['required']">
+                Education Qualification is required
+            </div>
+        </div>
+
+        <label class="mb-2 text-white align-item-center">Profession : </label>
+        <input class="form-control" type="text" formControlName="mprofession" />
+        <div *ngIf="mpro.invalid && (mpro.dirty || mpro.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="mpro.errors?.['required']">
+                Profession is required
+            </div>
+        </div>
+
+        <label class="mb-2 text-white align-item-center">Designation : </label>
+        <input class="form-control" type="text" formControlName="mdesignation" />
+        <div *ngIf="mdes.invalid && (mdes.dirty || mdes.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="mdes.errors?.['required']">
+                Designation is required
+            </div>
+        </div>
+
+        <label class="mb-2 text-white align-item-center">Phone : </label>
+        <input class="form-control" type="text" formControlName="mphone" />
+        <div *ngIf="mph.invalid && (mph.dirty || mph.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="mph.errors?.['required']">
+                Phone is required.
+            </div>
+            <div *ngIf="mph.errors?.['minlength']">
+                Number must be of 10 Digits.
+            </div>
+        </div>
+
+        <div formArrayName="emergency">
+            <label class="mb-2 text-white align-item-center">Emergency Contact List :</label>
+            <div *ngFor="let item of emg.controls;let i=index">
+                <input class="form-control mb-2" type="text" [formControlName]="i" />
+
+            </div>
+        </div>
+        <button type="button" class="mt-3 py-2 px-4 rounded bg-light text-black" (click)="addemg()">Add more Details</button>
+        <br>
+        <label class="mb-2 text-white align-item-center">Relation : </label>
+        <input class="form-control" type="text" formControlName="relation" />
+        <div *ngIf="rel.invalid && (rel.dirty || rel.touched) " class="mt-2 alert alert-danger">
+            <div *ngIf="rel.errors?.['required']">
+                Relation is required
+            </div>
+        </div>
+
+        <label class="mb-2 text-white align-item-center">Reference Details : </label>
+        <input class="form-control" type="text" formControlName="refDetail" />
+        
+
+        <label class="mb-2 text-white align-item-center">Reference Through : </label>
+        <input class="form-control" type="text" formControlName="refThrough" />
+        
+
+        <button class="rounded mt-4 py-2 px-4 mb-5 bg-light  text-black" type="submit" [disabled]="!stdForm.valid">Submit</button>
+    </form>
+
+</div>

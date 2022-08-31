@@ -1,0 +1,22 @@
+<h1 class="text-center my-3">{{Id}}</h1>
+<table class="table table-striped">
+    <caption></caption>
+    <thead>
+        <tr>
+            <th>UserId</th>
+            <th>UserName</th>
+            <th>Gender</th>
+            <th>Designation</th>
+            <th>PanNumber</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of filteredlist">
+            <td>{{item.userID}}</td>
+            <td>{{item.userName}}</td>
+            <td>{{item.Gender}}</td>
+            <td>{{item.designation}}</td>
+            <td>{{item.PanNumber}}</td>
+        </tr>
+    </tbody>
+</table>

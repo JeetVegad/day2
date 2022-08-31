@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const Employee = require('../../Crud/employeeCrud');
+const child = require('./child');
+router.use('/:empId/assignments', child);
+router.get('/', Employee.getEmployees);
+router.post('/', Employee.createEmployee);
+router.get('/:empId', Employee.getEmployeeById);
+router.patch('/:empId', Employee.updateAnEmployee);
+module.exports = router;

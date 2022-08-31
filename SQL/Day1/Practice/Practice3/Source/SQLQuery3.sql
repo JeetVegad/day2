@@ -1,0 +1,7 @@
+CREATE TABLE JOBS(
+	JobId INT PRIMARY KEY,
+	JobTitle VARCHAR(255),
+	MinSalary MONEY,
+	CHECK(MinSalary<=8000),
+	MaxSalary MONEY DEFAULT NULL
+)

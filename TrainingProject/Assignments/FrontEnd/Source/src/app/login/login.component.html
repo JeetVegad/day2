@@ -1,0 +1,36 @@
+
+<section class="mt-5" *ngIf="!isLoggedIn()">
+   
+      <div class="container ">
+
+        <div class="row d-flex ">
+          <div class="col-6 col-md-9 col-lg-7 col-xl-6">
+          
+              <div class="card-body p-5">
+
+    <h2>Login Here</h2>
+    <form [formGroup]="userData">
+      <div class="mb-3 mt-3" >
+        <label for="email">Email:</label>
+
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" formControlName="email">
+      </div>
+      <div class="mb-3">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" formControlName="password">
+      </div>
+      <button type="submit"  id="login" class="btn text-white form-control" (click)="login()">Submit</button>
+     
+    </form>
+  </div>
+
+</div>
+<div class="col-6">
+  <img class="_2tuBw _12_oN jdo4W mt-5" width="100" height="105" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r">
+</div>
+</div>
+</div>
+
+</section>
+<button *ngIf="isLoggedIn()" id="logout" class="btn text-white " (click)="logout()">Logout</button>
+

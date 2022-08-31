@@ -1,0 +1,30 @@
+<div [formGroup]="userdetails">
+    <input type="text" readonly formControlName="id" />
+    <input type="text" placeholder="name" formControlName="name" />
+    <input type="text" placeholder="email" formControlName="email" />
+    <input type="text" placeholder="gender" formControlName="gender" />
+    <input type="text" placeholder="status" formControlName="status" />
+<button type="submit" (click) = "post()">Add</button>
+<button type="button" (click) = "update()">Update</button>
+
+</div>
+
+<table>
+  <caption></caption>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let item of users">
+<td>{{item.id}}</td>
+<td>{{item.name}}</td>
+<td>{{item.email}}</td>
+<td>{{item.gender}}</td>
+<td>{{item.status}}</td>
+<td><button (click) = "edit(item)">Edit</button></td>
+<td><button (click) = "delete(item.id)">Delete</button></td>
+  </tr>
+</table>

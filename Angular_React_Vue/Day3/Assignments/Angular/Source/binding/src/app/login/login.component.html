@@ -1,0 +1,10 @@
+<form class="ms-4">
+        <h1 class>Login</h1>
+        <label>Username : </label>
+        <input class="form-control" name="usernm" type="text" [(ngModel)]="user" required> <br>
+        <label>Password  :  </label>
+        <input class="mt-3  form-control" name="ps" type="text" [(ngModel)]="pass" required><br>
+        <button (click)="match()" name="bu" class=" rounded p-1 px-3  text-white bg-success mt-2">Login</button>
+        <p class="text-danger mt-3 ms-5">{{res}}</p>
+        <p class="text-success ms-5">{{res1}}</p>
+</form>

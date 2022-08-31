@@ -1,0 +1,36 @@
+<div class="container mt-4">
+  <input type="text" class="form-control" placeholder="Enter location or Restaurant name" [(ngModel)]="searchText" />
+
+      <div class="row row-cols-4">
+  <div *ngFor="let item of Restaurants | filter:searchText">  
+      <div class="col-sm-3">
+
+      <div class="p-3  mb-3" style="width: 18rem;" id="cards" [routerLink]="['/fooditems', item.restaurantid]">
+        <img [src]="item.images"  height="160" width="254" alt="">
+        <div class="mt-2">
+            <div class="fw-bold">{{item.restaurantname}}</div>
+            <p id="type">
+              {{item.restauranttype}}
+            </p>
+          </div>
+          <div>
+            <span class="inline-block bg-success px-1"  id="rating"><em
+                class="me-1 fa fas fa-certificate "></em>{{item.rating}}</span>
+               
+            <span class="mx-3">-</span>
+            <span class="inline-block " id="time">{{item.times}} MINS</span>
+            <span class="mx-3">-</span>
+  
+            <span class="inline-block" id="price">&#8377;{{item.price}} FOR TWO</span>
+          </div>
+        
+          <hr>
+          <div id="coupen">
+            <p><em class="fa far fab fa-gg-circle text-secondary "></em> {{item.coupen}} off | Use WELCOME50</p>
+          </div>
+        
+      </div>
+      </div>
+  </div>
+</div>
+</div>

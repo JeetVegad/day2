@@ -1,0 +1,14 @@
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\bin\Debug\netcoreapp3.1\Assignment2.exe
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\bin\Debug\netcoreapp3.1\Assignment2.deps.json
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\bin\Debug\netcoreapp3.1\Assignment2.runtimeconfig.json
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\bin\Debug\netcoreapp3.1\Assignment2.runtimeconfig.dev.json
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\bin\Debug\netcoreapp3.1\Assignment2.dll
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\bin\Debug\netcoreapp3.1\Assignment2.pdb
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\obj\Debug\netcoreapp3.1\Assignment2.csproj.AssemblyReference.cache
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\obj\Debug\netcoreapp3.1\Assignment2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\obj\Debug\netcoreapp3.1\Assignment2.AssemblyInfoInputs.cache
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\obj\Debug\netcoreapp3.1\Assignment2.AssemblyInfo.cs
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\obj\Debug\netcoreapp3.1\Assignment2.csproj.CoreCompileInputs.cache
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\obj\Debug\netcoreapp3.1\Assignment2.dll
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\obj\Debug\netcoreapp3.1\Assignment2.pdb
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment2\Source\Assignment2\Assignment2\obj\Debug\netcoreapp3.1\Assignment2.genruntimeconfig.cache

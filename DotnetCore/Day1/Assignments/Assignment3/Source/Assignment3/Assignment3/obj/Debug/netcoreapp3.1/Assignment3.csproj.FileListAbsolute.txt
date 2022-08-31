@@ -1,0 +1,13 @@
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\bin\Debug\netcoreapp3.1\Assignment3.exe
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\bin\Debug\netcoreapp3.1\Assignment3.deps.json
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\bin\Debug\netcoreapp3.1\Assignment3.runtimeconfig.json
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\bin\Debug\netcoreapp3.1\Assignment3.runtimeconfig.dev.json
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\bin\Debug\netcoreapp3.1\Assignment3.dll
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\bin\Debug\netcoreapp3.1\Assignment3.pdb
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.AssemblyInfoInputs.cache
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.AssemblyInfo.cs
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.csproj.CoreCompileInputs.cache
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.dll
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.pdb
+C:\Users\jeet.vegad\2447-Jeet.V-Feb22\.NetCore\Day1\Assignments\Assignment3\Source\Assignment3\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.genruntimeconfig.cache

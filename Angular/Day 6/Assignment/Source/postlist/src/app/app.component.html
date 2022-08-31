@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-post (postnotify) = "postsevent($event)"></app-post>
+  
+    </div>
+    <div class="col">
+     <h1> <a href="#" class="text-decoration-none text-dark" (click)="display()">Total post liked : {{postitems.length}}</a></h1>
+
+      <table class="table mt-5" *ngIf="isShown">
+        <caption></caption>
+        <thead>
+          <tr>
+          <th>Post No.</th>
+          <th>Post Description</th>
+          <th>Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let posts of postitems">
+            <td>{{posts.pname}}</td>
+            <td>{{posts.pdics}}</td>
+            <td>{{posts.date}}</td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+  </div>

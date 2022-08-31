@@ -1,0 +1,20 @@
+Task 1:Creating Repository, creating folder in remote And adding file
+
+	Repository:https://github.com/JeetVegad/practice2.git
+	2 Commits
+	1.Initial commit
+	2.Creating HTML folder with help of "/"
+	3.Adding "helo" file in folder with help of commit
+
+Task 2.Practicing push,pull and clone
+
+	Repository:https://github.com/JeetVegad/Practice-1.git
+	8 commits
+	1.Initial commit:creating repository
+	2.Adding file "Hello.html"
+	*.Cloning In local system with help of "git clone Repo_url" Command
+	3.Adding h2 with help of commit and push
+	4.Pull the changes in local system.
+	5.Addind h3 with help of commit and push
+	6.changing README.md File
+	7.Adding h4 with help of commit and push

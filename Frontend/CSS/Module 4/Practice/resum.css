@@ -1,0 +1,18 @@
+.container{
+    display: grid;
+    height: auto;
+    grid-template-columns:1fr 4fr;
+    grid-template-areas:
+    "sidebar content"; 
+}
+.sidebar{background-color: rgb(233, 150, 112);
+        grid-area: sidebar;position: fixed;height:900px;
+        }
+.content{background-color: rgb(241, 241, 181);
+        grid-area: content;}
+img{height: 250px;width: 250px;padding: 25px;}
+a{text-decoration: none;padding: 10px;color: black;}
+h1{margin-left: 180px;margin-top: 700px;color: rgb(238, 10, 10);}
+.link li{text-align: center;
+        list-style-type: none;padding: 10px; font-size: larger;}
+.con li{list-style-type: square;margin: left 400px; padding: 8px;font-size: medium;}

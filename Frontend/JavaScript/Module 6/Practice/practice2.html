@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Stoar in Local Storage</title>
+</head>
+<body>
+
+
+
+
+    <script type="text/javascript">
+        var data='{"product":[\
+            {\
+                "id":1,\
+                "name":"Chees",\
+                "price":100,\
+                "qunatity":1\
+            },\
+            {\
+                "id":2,\
+                "name":"Pen",\
+                "price":150,\
+                "qunatity":2\
+            },\
+            {\
+                "id":3,\
+                "name":"Butter",\
+                "price":100,\
+                "qunatity":1\
+            },\
+            {\
+                "id":4,\
+                "name":"Pencil",\
+                "price":10,\
+                "qunatity":1\
+            }\
+            ]\
+        }'
+
+        // alert(JSON.stringify(data))
+        localStorage.setItem("data",data);
+
+        readData=localStorage.getItem("data");
+        console.log(JSON.parse(readData));
+    
+    </script>
+    
+</body>
+</html>

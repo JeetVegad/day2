@@ -1,0 +1,8 @@
+<div *ngFor="let item of postlist">
+        <h1>{{item.pname}}</h1>
+        <img alt="" src={{item.pimg}}>
+        <h4 class="mt-4">Description : {{item.pdics}}</h4>
+        <h5>Posted Date : {{item.date}}</h5>
+        <button type="submit" (click)="liked(item)" class="btn text-white rounded px-3 my-2 bg-dark">Like</button>
+    <hr> 
+</div>

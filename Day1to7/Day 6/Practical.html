@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pracricing</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+        <p>HELLO!!</p>
+        <form id="myform">5
+            <label for="date-input">please choose date</label>
+            <input type="date" id="date-input"/></br>
+            <label for="time-input">please choose time</label>
+            <input type="time" id="time-input"/></br>
+            <label for="month-input">please choose month</label>
+            <input type="month" id="month-input"/></br>
+            <label for="week-input">please choose week</label>
+            <input type="week" id="week-input"/></br>
+            <input type="range" id="range-data" min="1" max="10"></br>
+            <label for = "search-data">Search</label>
+            <input type="search" id="search-data" placeholder="search" /></br>
+            <label for="tel-data">Telephone:</label>
+            <input type="tel" id="tel-data" required /></br>
+            <input type="submit" value = "Submit"></br>
+            <label for="email-data">Email</label>
+            <input type="email" id="email-data" required multiple /></br>
+            <label for="color-data">Color</label>
+            <input type="color" id="color-data"/></br>
+            <label for="mydatalist">Datalist:</label>
+            <input type="text" list="mydatalist">
+            <datalist id="mydatalist">
+                <option label="Mr." value="Mr."></option>
+                <option label="Mrs." value="Mrs."></option>
+                <option label="Ms." value="Ms."></option>
+            </datalist></br>
+            <label for="progressbar">Progressbar:</label>
+            <progress value="5" max="20"></progress></br>
+            <label for="meter-data">Meter:</label>
+            <meter id="meter-data" min="50" max="100" value="80" low="20" high="70" optimum="50"></meter>
+        </form>
+        <label for="outsidetext-data">Other text:</label>
+        <input type="text" id="outsidetext-data" form="myform" >
+</body>
+</html>

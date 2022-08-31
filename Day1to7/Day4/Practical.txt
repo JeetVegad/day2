@@ -1,0 +1,30 @@
+Repository:https://github.com/JeetVegad/Cherrypick-Rebase.git
+
+Cherry Pick
+
+
+
+1) create 1.txt in development branch
+2) commit it and push it
+3) after that checkout main branch
+4) go to git log and copy that commit id
+5) write git cherry-pick "commitid"
+6) push it
+
+
+
+Rebase
+1) go develop branch create 1.txt and commit it and push it
+2) write git rebase development
+3) then you can get coomit of devlop branch in main branch
+
+svn
+
+
+1) installing tortoise svn
+2) checkout using svn using svn checkout
+3) and then create folder commit it
+4) creating file and commit it
+5) again repeat th step above two step
+6) modified file both and conflict occur solve the conflict
+7) add that file than in ignorefile section

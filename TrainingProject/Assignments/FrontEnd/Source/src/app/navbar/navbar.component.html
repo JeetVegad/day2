@@ -1,0 +1,74 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3" style="height: 80px;">
+  <!-- Container wrapper -->
+  <div class="container-fluid " id="nav">
+    <!-- Toggle button -->
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+      <div>
+       <a href="#"> <img src="https://w7.pngwing.com/pngs/55/100/png-transparent-swiggy-hd-logo-thumbnail.png" class="ml-80" height="49"  width="34" alt="Flowbite Logo"  /></a>
+      </div>
+      <div id="spannav">
+        <span class="fw-bold ms-5 me-2"><u class="mt-2">Chandkheda</u></span>
+        <span class="text-gray-700">New Chamunda Society,Godre..</span>
+        <span ><em class="fa fa-caret text-orange-500"></em></span>  
+
+      </div>
+      <!-- Left links -->
+      
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbarlist">
+        <li class="nav-item mx-2">
+          <a  class="nav-link" routerLink="/search">
+            <span><em class="fa fa-search mx-2"></em></span>Search</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a  class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#demo"   >
+            
+            <span><em class="fa far fa-user mx-2" ></em></span>Sign in</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a  class="nav-link" routerLink="/checkout">
+            <span><em class="fa fas fa-cart-arrow-down mx-2"></em></span>Cart</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a  class="nav-link" routerLink="/profile">
+            <span><em class="fa fa-user-circle mx-2"></em></span>Profile</a>
+        </li>
+
+      </ul>
+   
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Offcanvas Sidebar -->
+<div class="offcanvas offcanvas-end" style="width: 40%;" id="demo">
+  <!-- <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Heading</h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Some text lorem ipsum.</p>
+    <p>Some text lorem ipsum.</p>
+    <button class="btn btn-secondary" type="button">A Button</button>
+  </div> -->
+  
+
+  <ng-container *ngIf="!flag ">
+  <p (click)="Show()" class="text-center text-muted mt-5 mb-0" >Already Have account ?  
+    <u class="fw-bold text-body  cursor-pointer" id="log">Login to your account</u></p>
+  </ng-container>
+  <ng-container *ngIf="flag && !isLoggedIn()">
+  <p (click)="Show()" class="text-center text-muted mt-5 mb-0" >New User ?  
+    <u class="fw-bold text-body  cursor-pointer" id="reg">Register here</u></p>
+  </ng-container>
+ 
+  <app-login  *ngIf="flag"></app-login>
+  <ng-container *ngIf="!flag">
+    <app-signup ></app-signup>
+  </ng-container>
+</div>
+
+
+

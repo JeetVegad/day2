@@ -1,0 +1,84 @@
+<div class="container-fluid bg-dark mt-3">
+<h2 class="text-white">RestaurantFoodItem</h2>
+<div [formGroup]="fooditemdetails">
+    <div class="row">
+        <div class="col-md-6">
+            <label  class="form-label text-white">FoodItemId :</label>
+            <input readonly type="text" class="readonly form-control my-1" placeholder="readonly" formControlName="fooditemid">
+        <label  class="form-label text-white">FoodCategory:</label>
+            <select class="my-1 form-control" name="foodtype" formControlName="foodid">
+                <option *ngFor="let item of foodmaster" value="{{item.foodid}}">{{item.foodname}}</option>
+              </select>
+        <label  class="form-label text-white">Restaurant Name:</label>
+              <select class="my-1 form-control" name="restarantname" formControlName="restaurantid">
+                <option *ngFor="let item of restaurants" value="{{item.restaurantid}}">{{item.restaurantname}}</option>
+              </select>
+              <label  class="form-label text-white">Image :</label>
+              <input type="file" class="form-control my-1" placeholder="price" (change)="uploadImage($event)" /> 
+        </div>
+        <div class="col-md-6">
+        <label  class="form-label text-white">Food Name:</label>
+            <input type="text" class="form-control my-1" placeholder="Foodname" formControlName="foodname" />
+        <label  class="form-label text-white">Price:</label>
+            <input type="number" class="form-control my-1" placeholder="Price" formControlName="price" />
+        <label  class="form-label text-white">Description:</label>
+            <input type="text" class="form-control my-1" placeholder="Description" formControlName="description" />
+        </div>
+    </div>
+    <!-- <input type="text" readonly formControlName="fooditemid" /> -->
+    
+   
+  <div  class="my-3">
+     <button type="submit" class="btn btn-primary mx-2" (click)="postFooditem()">Add</button>
+     <button type="button" class="btn btn-warning mr-2" (click)="updateFooditem()">Update</button>
+    </div>
+      <!-- <button type="button" (click)="update()">Update</button> -->
+
+    <!-- <button type="button" (click)="update()">Update</button> --> 
+   
+  
+  </div>
+
+  <table class="table table-striped text-white">
+    <caption></caption>
+    <tr>
+      <th>FoodItemId</th>
+      <th>FoodCategory</th>
+      <th>RestaurantName</th>
+      <th>FoodName</th>
+      <th>Price</th>
+      <th>Description</th>
+    </tr>
+    <tr *ngFor="let item of fooditems">
+      <td> {{item.fooditemid}}</td>
+      <td>
+        <ng-container *ngFor="let item1 of foodmaster">
+          <label *ngIf="item1.foodid==item.foodid">{{item1.foodname}}</label>
+        </ng-container>
+      </td>
+        <td>
+          <ng-container *ngFor="let item1 of restaurants">
+            <label *ngIf="item1.restaurantid==item.restaurantid">{{item1.restaurantname}}</label>
+          </ng-container>
+        </td>
+      <td> {{item.foodname}}</td>
+      <td>{{item.price}}</td>
+      <td>{{item.description}}</td>
+      <td><button class="btn btn-warning text-white" (click)="editFooditem(item)">Edit</button></td>
+      <td><button class="btn btn-danger" type="button" (click)="deleteFooditem(item.fooditemid)">Delete</button></td>
+
+
+      <!-- <td >
+        <ng-container *ngFor="let item1 of city">
+                    <label *ngIf="item1.cityid==item.cityid">{{item1.cityname}}</label>
+        </ng-container>
+      </td>
+      <td><button (click)="edit(item)">Edit</button></td>
+      <td><button type="button" (click)="delete(item.restaurantid)">Delete</button></td>
+     <td><button (click)="edit(item)">Edit</button></td> -->
+      <!-- <td><button type="button" (click)="delete(item.id)">Delete</button></td> -->
+    </tr>
+  </table>
+</div>
+
+<!-- {{fooditem | json}} -->

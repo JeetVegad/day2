@@ -1,0 +1,79 @@
+<div class="container mt-5" *ngFor="let user of users">
+    <ng-container *ngIf="user.useremail == useremail">
+      <div  class="float-end">
+<button *ngIf="isLoggedIn()"  class="btn btn-primary text-white" (click)="logout()" routerLink="/" >Logout</button>
+
+            <div *ngIf="role == 'admin'">
+            <h6>You are Admin!!</h6>
+            <button class="btn btn-primary" routerLink="/adminpanel">Admin Panel</button>
+        </div>
+        </div> 
+<div class="name"> {{user.username}} </div>
+<div class="phone">
+    <span>{{user.phone}}</span>  <span>-</span>
+    <span class="email">{{user.useremail}}</span>
+</div>
+<hr>
+<h2>Order Details</h2>
+<div *ngFor="let order of orders">
+    <ng-container *ngIf="user.userid == order.userid">
+        <!-- {{order.orderdate}} -->
+    <ng-container *ngFor="let orderitem of orderitems">
+        <ng-container *ngIf="order.orderid == orderitem.orderid">
+            <ng-container *ngFor="let fooditem of fooditems">
+             <ng-container  *ngIf="orderitem.fooditemid == fooditem.fooditemid">
+                <!-- {{order.orderid}}
+                {{fooditem.foodname}} -->
+                <ng-container *ngFor="let restaurant of restaurants">
+                    <ng-container  *ngIf="orderitem.restaurantid == restaurant.restaurantid">
+                      <!-- <img src="{{restaurant.images}}" alt=""> 
+                {{restaurant.restaurantname}}
+                {{orderitem.quantity}}
+                {{order.orderdate}}
+                {{order.total}} -->
+                
+<div class="container">
+    <hr />
+    <div class="card" style="width: 800px;">
+        <div class="row no-gutters">
+            <div class="col-sm-5">
+                <img class="card-img" src="{{restaurant.images}}" alt="Suresh Dasari Card">
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h5 class="card-title">{{restaurant.restaurantname}}</h5> <span class="float-end">Deliverd on:{{order.orderdate}}</span>
+                    <h6>{{restaurant.addresss}}</h6>
+                    <h6>OrderId:#{{order.orderid}}</h6>
+                    <p class="card-text">Suresh Dasari is a founder and technical lead developer in tutlane.</p>
+                </div>
+            </div>
+        </div>
+        <hr class="border-dashed">
+        <div class="row mb-3">
+            <div class="col-4">
+       <span class="mb-3 ms-3"> {{fooditem.foodname}} &#215; {{orderitem.quantity}} </span> 
+            </div><div class="col-4">
+
+            </div><div class="col-4">
+                Total Paid: &#8377;{{order.total}}
+            </div>
+        </div>
+    </div>
+</div>
+                </ng-container>
+                </ng-container>
+             </ng-container>
+            </ng-container>
+        </ng-container>
+    </ng-container>
+    </ng-container>
+</div>
+</ng-container>
+</div>
+
+<div *ngIf="!isLoggedIn()">
+    <h2 class="text-center">You are not loggedin please login or sign up here !!!!</h2>
+    <div class="text-center">
+    <button class="mt-5 btn btn-warning" routerLink="/login">Click here to Login</button>
+</div>
+</div>

@@ -1,0 +1,11 @@
+Repository:https://github.com/JeetVegad/Merging.git
+
+Task : Learning to merging branches and resolve conflict when branching
+
+	1.Creating new branch development
+	2.adding index.html in development branch 
+	3.Creating new branch demo from development
+	4.Checkout in development branch and merge with demo
+	5.adding some new line of code in both of the branch demo and development
+	6.pull it if conflict occur than resolve it
+	7.merge with demo branch and push it

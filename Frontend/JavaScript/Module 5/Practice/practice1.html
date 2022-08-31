@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice1</title>
+</head>
+<body style="text-align: center;">
+    <h1>Find Area of circle</h1>
+    <label for="radius">Enter Radius :</label>
+   <input type="number" name="radius" id="radius"><br>
+   <button type="button" onclick="area(radius)" style="margin-top: 8px;">Find Area Of Circle</button>
+   <p id="demo"></p>
+   <script>
+       function area(radius){
+           radius =document.getElementById("radius").value;
+
+           var result;
+           result = 3.14 * radius * radius;
+           
+          document.getElementById("demo").innerHTML = "The Result is :" + result;
+       }    
+       
+
+    
+   </script>
+</body>
+</html>

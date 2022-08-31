@@ -1,0 +1,20 @@
+<table class="table">
+  <caption></caption>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of productlist">
+            <td></td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.quntity}}</td>
+            <td>{{item.price}}*{{item.quntity}} - {{item.price}}*{{item.quntity}} *0.05</td>
+        </tr>
+    </tbody>
+  </table>

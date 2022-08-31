@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="time">Timer</h1>
+</body>
+<script>
+    var totalTime = new Date().getTime() + 10800000 ;
+
+    var x = setInterval(()=>{
+        var starttime = new Date().getTime();
+        var distance = totalTime - starttime;
+
+        var hours = Math.floor((distance/(1000*60*60))%24);
+        var minutes = Math.floor((distance/(1000*60))%60);
+        var second = Math.floor((distance/1000)%60);
+
+        document.getElementById('time').innerHTML = `${hours}H ${minutes}M ${second}S`;
+
+        if(distance < 1){
+            clearInterval(x);
+            document.getElementById('time').innerHTML = 'Exam Done!!!';
+            fetch('http://localhost:3000/over');
+        }
+    },1000);
+</script>
+</html>

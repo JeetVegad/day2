@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice3</title>
+</head>
+
+<body>
+    <label for="String">Enter the String :</label>
+    <input type="text" name="str" id="str" style="margin-bottom: 6px;"> <br>
+    <label for="character">From:</label>
+    <input type="number" name="num1" id="num1" style="margin-bottom: 6px;margin-left: 70px;"><br>
+    <label for="character">To:</label>
+    <input type="number" name="num2" id="num2" style="margin-bottom: 6px; margin-left: 87px;"><br>
+    <button onclick="check()" style=" padding: 12px;">Check It!</button>
+    <p id="demo"></p>
+    <script>
+        function check() {
+            var st = (document.getElementById('str').value).toString();
+            var number1 = document.getElementById('num1').value;
+            var number2 = document.getElementById('num2').value;
+            let result = st.substr(number1, number2);
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

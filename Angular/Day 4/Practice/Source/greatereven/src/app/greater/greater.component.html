@@ -1,0 +1,13 @@
+<h3>Check Greater Number Between two numbers :</h3>
+Enter Number 1: <input class="form-control" type="number"  [(ngModel)]="num1"><br>
+Enter Number 2: <input class="mt-2 form-control" type="number" [(ngModel)]="num2">
+<div class="mt-4">
+    <h3>Result :</h3>
+<div *ngIf="num1>num2">
+    <p><strong>{{num1}} </strong>is greater than <strong>{{num2}}</strong></p>
+</div>
+
+<div  *ngIf="num1<num2">
+    <p><strong>{{num2}} </strong>is greater than <strong>{{num1}}</strong></p>
+</div>
+</div>

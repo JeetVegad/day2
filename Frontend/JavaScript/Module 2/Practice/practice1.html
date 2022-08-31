@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+    <label for="String">Enter the String :</label>
+    <input type="text" name="str" id="str" style="margin: 20px;"> <br>
+    <button onclick="check()" style=" padding: 12px;">Check It!</button>
+    <p id="demo"></p>
+    <script>
+        function check() {
+            var st = (document.getElementById('str').value).toString();
+
+            if (st.length === 0) {
+                document.getElementById("demo").innerHTML = "The string is empty"
+            }
+            else {
+                document.getElementById("demo").innerHTML = "This is String " + " " + st
+            }
+        }
+    </script>
+</body>
+
+</html>

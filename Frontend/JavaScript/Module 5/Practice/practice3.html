@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice3</title>
+</head>
+
+<body>
+    <p><strong>Hoisting :</strong>Hoisting is JavaScript's default behavior of moving all declarations to the top of the
+        current scope (to the top of the current script or the current function).</p>
+
+    <p>With <strong>const</strong> you cannot use a variable before it is declared.</p>
+    <p>With <strong>let</strong>, you cannot use a variable before it is declared.</p>
+    <p id="demo"></p>
+    <script>
+        var x = 5; 
+        var y;
+
+        elem = document.getElementById("demo");  
+        elem.innerHTML = x + " " + y;       
+
+        y = 7;   
+    </script>
+</body>
+
+</html>

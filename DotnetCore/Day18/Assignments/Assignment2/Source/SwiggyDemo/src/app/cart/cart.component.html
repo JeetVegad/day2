@@ -1,0 +1,30 @@
+ <div class="my-3 ">
+                        <h3 class="mt-5 ">Cart</h3>
+                        <table class="border-start border-4 border-dark">
+                            <caption></caption>
+                            <th></th>
+                            <tr *ngFor="let obj of cartitems">
+                                <td><i class="fa fa-square-o ms-1  me-2" aria-hidden="true"></i><span id="cartfood">{{obj.foodname}}</span></td>
+                                <td>
+                                    <div id="cartbtn" class=" btn-group-sm btn-light mb-3" role="group" aria-label="Second group">
+                                        <button type="button" class="btn text-secondary btn-white" (click)="removeButton(obj)">-</button>
+                                        <span type="button" class="btn btn-white">{{obj.quantity}}</span>
+                                        <button type="button" class="btn text-success btn-white"(click)="addButton(obj)">+</button>
+                                      </div>
+                                </td>
+                                <td>${{obj.price}}</td>
+                            </tr>
+                           <div class="mt-4"></div>
+                                                      
+                        <div class="mt-3"></div>
+                        <tr>
+                            <td><h6>Subtotal</h6></td>
+                            <td>
+                            </td>
+                            <td><h6>$35</h6></td>
+                        </tr>
+                        </table>
+                    <button class="btn btn-success text-center mt-4 p-2" style="width: 100%;"><h6>CHECKOUT</h6></button>
+                </div>
+ <!-- <p>{{cartitems | json}}</p>
+<p>{{foodlist | json}}</p> -->
